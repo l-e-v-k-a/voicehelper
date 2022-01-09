@@ -1,6 +1,7 @@
 import requests
-open_weather_token = "c7be47a4c5e3121c3a7c99fa81a0ba56"
+open_weather_token = "your_token"
 
+"""
 id_to_emoji = {
     "temperature": "\U0001F321",
     "pressure": "\U000023F2",
@@ -14,7 +15,7 @@ id_to_emoji = {
     "8": "\U00002601",
     "800": "\U00002600"
 }
-
+"""
 
 def get_weather(city="nizhny+novgorod", token=open_weather_token):
 	r = requests.get(f"http://api.openweathermap.org/data/2.5/weather?q={city}&lang=ru&appid={token}&units=metric")
